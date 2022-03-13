@@ -1,4 +1,6 @@
+
 # Arvore-Genealogica
+
 ## Manipulação de threads em Java
 
 => Implementação através da derivação da classe Thread
@@ -8,6 +10,5 @@
 => Principais métodos de manipulação
 de threads
 
-
-
+![Processo de Threads em Java](threads.jpg)
 Uma árvore genealógica com Threads em Java

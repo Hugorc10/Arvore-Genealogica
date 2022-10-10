@@ -7,6 +7,8 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import view.ScreenView;
 
+import java.util.Objects;
+
 public class Father extends Thread {
 
     Son1 son1;
@@ -33,16 +35,16 @@ public class Father extends Thread {
                         ScreenView.fatherYearsLbl.setText("Age: " + finalI);
                     } // fim do else
 
-                    if (finalI >= 0 && finalI < 4) {
+                    if (finalI < 4) {
                         ScreenView.fatherView.setImage(FatherImagesPath.getBabyImg());
                         ScreenView.fatherView.setFitHeight(100);
-                    } else if (finalI >= 4 && finalI < 12) {
+                    } else if (finalI < 12) {
                         ScreenView.fatherView.setImage(FatherImagesPath.getKidImg());
                         ScreenView.fatherView.setFitHeight(125);
-                    } else if (finalI >= 12 && finalI < 18) {
+                    } else if (finalI < 18) {
                         ScreenView.fatherView.setImage(FatherImagesPath.getTeenImg());
                         ScreenView.fatherView.setFitHeight(125);
-                    } else if (finalI >= 18 && finalI < 30) {
+                    } else if (finalI < 30) {
                         ScreenView.fatherView.setImage(FatherImagesPath.getYoungImg());
                         ScreenView.fatherView.setFitHeight(125);
                         if (finalI == 22 && !son1.isAlive()) {
@@ -51,14 +53,14 @@ public class Father extends Thread {
                         if (finalI == 25 && !son2.isAlive()) {
                             son2.start();
                         } // Fim do if
-                    } else if (finalI >= 30 && finalI < 50) {
+                    } else if (finalI < 50) {
                         ScreenView.fatherView.setImage(FatherImagesPath.getAdultImg());
                         ScreenView.fatherView.setFitHeight(125);
 
                         if (finalI == 32 && !son3.isAlive()) {
                             son3.start();
                         } // Fim do if
-                    } else if (finalI == 50 && finalI < 70) {
+                    } else if (finalI == 50) {
                         ScreenView.fatherView.setImage(FatherImagesPath.getOldImg());
                         ScreenView.fatherView.setFitHeight(125);
                     } else if (finalI >= 70) {
@@ -73,7 +75,7 @@ public class Father extends Thread {
                             Pane secondPane = new Pane();
                             secondPane.setPrefSize(711, 400);
     
-                            Image rickAndMortyImg = new Image(Father.class.getResourceAsStream("/img/gif/rick_and_morty.gif"));
+                            Image rickAndMortyImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/gif/rick_and_morty.gif")));
     
                             BackgroundSize backgroundSize = new BackgroundSize(711, 400, true,
                                     true, true, false);

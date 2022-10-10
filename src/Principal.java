@@ -43,7 +43,7 @@ public class Principal extends Application {
         ScreenView screenView = new ScreenView();
         primaryStage.setScene(new Scene(screenView.createContent()));
         // Seta como nao redimensionavel
-        primaryStage.setResizable(true);
+        primaryStage.setResizable(false);
         // A largura e a altura da janela serao igual ao tamanho do conteudo da cena
         primaryStage.sizeToScene();
         primaryStage.show();

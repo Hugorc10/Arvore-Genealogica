@@ -2,16 +2,17 @@ package model;
 
 import javafx.scene.image.Image;
 
-public class Son3ImagesPath {
+import java.util.Objects;
 
-    private static final Image babyImg = new Image(Father.class.getResourceAsStream("/img/son3/baby4.png"));
-    private static final Image childrenImg = new Image(Father.class.getResourceAsStream("/img/son3/children4.png"));
-    private static final Image kidImg = new Image(Father.class.getResourceAsStream("/img/son3/kid4.png"));
-    private static final Image teenImg = new Image(Father.class.getResourceAsStream("/img/son3/teen4.png"));
-    private static final Image youngAdultImg = new Image(Father.class.getResourceAsStream("/img/son3/young_adult4.png"));
-    private static final Image adultImg = new Image(Father.class.getResourceAsStream("/img/son3/adult4.png"));
-    private static final Image oldImg = new Image(Father.class.getResourceAsStream("/img/son3/old4.png"));
-    private static final Image graveImg = new Image(Father.class.getResourceAsStream("/img/son3/grave4.png"));
+public class Son3ImagesPath {
+    private static final Image babyImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/son3/baby4.png")));
+    private static final Image childrenImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/son3/children4.png")));
+    private static final Image kidImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/son3/kid4.png")));
+    private static final Image teenImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/son3/teen4.png")));
+    private static final Image youngAdultImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/son3/young_adult4.png")));
+    private static final Image adultImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/son3/adult4.png")));
+    private static final Image oldImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/son3/old4.png")));
+    private static final Image graveImg = new Image(Objects.requireNonNull(Father.class.getResourceAsStream("/img/son3/grave4.png")));
 
     public static Image getBabyImg() {
         return babyImg;

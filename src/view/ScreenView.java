@@ -9,7 +9,6 @@ import javafx.scene.text.FontWeight;
 import model.Father;
 
 public class ScreenView {
-
     public static ImageView fatherView;
     public static ImageView son1View;
     public static ImageView son2View;
